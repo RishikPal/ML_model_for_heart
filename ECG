@@ -1,0 +1,72 @@
+# 📈 ECG Signal Processing Workshop
+
+This repository contains MATLAB resources and signal processing workflows for analyzing **Electrocardiogram (ECG)** signals. It demonstrates essential techniques for ECG preprocessing and fiducial point detection using an enhanced **Pan-Tompkins algorithm**.
+
+---
+
+## 📖 Overview
+
+An **Electrocardiogram (ECG)** records the heart's electrical activity and is widely used to detect heart rhythm abnormalities and various cardiovascular diseases. This project focuses on processing ECG signals to accurately detect key waveforms: **P, Q, R, S, T peaks**.
+
+---
+
+## 📊 Workflow Summary
+
+1. **DC Removal & Normalization**
+   - Remove baseline offset.
+   - Normalize signal amplitude.
+
+2. **Filtering**
+   - Apply Low-Pass and High-Pass filters to remove noise and baseline drift.
+   - Use Derivative and Squaring operations to enhance QRS complexes.
+
+3. **Moving Window Integration**
+   - Smooth squared signal for peak detection.
+
+4. **Adaptive Thresholding**
+   - Dynamically identify QRS complex regions.
+
+5. **Fiducial Point Detection**
+   - Detect R-peaks, followed by Q, S, T, and P peaks within cardiac cycles.
+
+---
+
+## 🩺 Applications
+
+- Detect heart conditions like:
+  - Arrhythmia (Atrial Fibrillation)
+  - Right Bundle Branch Block (RBBB)
+  - Hypertension
+  - Dilated Cardiomyopathy (DCM)
+  - Complete Heart Block (CHB)
+
+---
+
+## 💾 Requirements
+
+- MATLAB (Signal Processing Toolbox recommended)
+
+---
+
+## 📂 Files Included
+
+- `ECG_PanTompkins_Implementation.m` — Full signal processing workflow
+- `ECG_Fiducial_Point_Detection.m` — Peak detection and labeling implementation
+- `README.md` — Project description and guide
+
+---
+
+## 📚 Reference
+
+Based on the classic **Pan-Tompkins QRS detection algorithm**:
+> Pan, J. & Tompkins, W. J. (1985). A real-time QRS detection algorithm. *IEEE Transactions on Biomedical Engineering.*
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+
